@@ -1,0 +1,110 @@
+name: 🚀 軟體推薦
+description: 推薦一個實用的 Mac 開發者工具或軟體
+title: "推薦工具： "
+labels: ["enhancement", "軟體推薦"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感謝您的推薦！請盡可能填寫詳細資訊，幫助其他開發者了解這個工具。
+
+  - type: input
+    id: software-name
+    attributes:
+      label: 軟體名稱
+      description: 您要推薦的軟體名稱
+      placeholder: 例如：Rectangle、Raycast、iTerm2
+    validations:
+      required: true
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: 軟體類別
+      description: 請選擇最符合的類別（可參考 README 的分類）
+      options:
+        - 套件管理與基礎工具
+        - 終端機（Terminal）
+        - 啟動器與工作流工具
+        - 鍵盤、快捷鍵與輸入法
+        - 視窗與桌面管理
+        - 系統工具與日常應用
+        - 開發與生產力工具
+        - 其他
+    validations:
+      required: true
+
+  - type: input
+    id: official-website
+    attributes:
+      label: 官方網站或專案連結
+      description: 請提供官方網站、GitHub 專案或下載連結
+      placeholder: https://
+    validations:
+      required: true
+
+  - type: dropdown
+    id: pricing
+    attributes:
+      label: 價格
+      description: 這個軟體是免費還是付費？
+      options:
+        - 免費
+        - 免費（開源）
+        - 付費（一次買斷）
+        - 付費（訂閱制）
+        - 免費增值（Freemium）
+    validations:
+      required: true
+
+  - type: textarea
+    id: features
+    attributes:
+      label: 主要功能與特色
+      description: 請描述這個軟體的核心功能、特色或優勢
+      placeholder: |
+        例如：
+        - 功能 1：快速啟動應用程式
+        - 功能 2：整合剪貼簿歷史
+        - 功能 3：支援自訂 workflow
+    validations:
+      required: true
+
+  - type: textarea
+    id: installation
+    attributes:
+      label: 安裝方式
+      description: 如何安裝這個軟體？（Homebrew、App Store、官方下載等）
+      placeholder: |
+        例如：
+        brew install --cask rectangle
+        或
+        從 App Store 下載
+    validations:
+      required: false
+
+  - type: textarea
+    id: use-case
+    attributes:
+      label: 使用場景或推薦理由
+      description: 為什麼推薦這個工具？它解決了什麼問題？
+      placeholder: 例如：適合需要快速管理多視窗的開發者，可以用快捷鍵快速排列視窗位置
+    validations:
+      required: false
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 替代方案（選填）
+      description: 是否有類似的替代工具？
+      placeholder: 例如：類似工具有 Magnet、BetterSnapTool
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: 其他補充資訊
+      description: 任何其他想分享的資訊、注意事項或使用技巧
+    validations:
+      required: false

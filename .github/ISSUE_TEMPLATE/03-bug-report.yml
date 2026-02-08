@@ -1,0 +1,67 @@
+name: 🐛 錯誤回報
+description: 回報 README 中的錯誤（連結失效、資訊錯誤等）
+title: "錯誤回報： "
+labels: ["bug", "錯誤回報"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感謝您回報問題！請提供詳細資訊以便我們修正。
+
+  - type: dropdown
+    id: error-type
+    attributes:
+      label: 錯誤類型
+      description: 請選擇您發現的錯誤類型
+      options:
+        - 連結失效（404、網站不存在）
+        - 資訊錯誤（價格、功能描述不符）
+        - 軟體已停止維護
+        - 重複內容
+        - 排版或格式問題
+        - 其他
+    validations:
+      required: true
+
+  - type: textarea
+    id: error-location
+    attributes:
+      label: 錯誤位置
+      description: 請描述錯誤在 README 的哪個部分
+      placeholder: |
+        例如：
+        - 章節：二、終端機（Terminal）選擇
+        - 軟體名稱：Alacritty
+        - 行數：約第 82 行
+    validations:
+      required: true
+
+  - type: textarea
+    id: error-description
+    attributes:
+      label: 錯誤描述
+      description: 請詳細描述您發現的問題
+      placeholder: |
+        例如：
+        - https://github.com/xxx/xxx 連結返回 404
+        - 軟體價格已改為訂閱制，但文件顯示為一次買斷
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggested-fix
+    attributes:
+      label: 建議的修正方式（選填）
+      description: 如果您知道如何修正，請提供建議
+      placeholder: 例如：建議移除該軟體，或更新連結為 https://...
+    validations:
+      required: false
+
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: 截圖或證明（選填）
+      description: 如果有截圖或相關證明，可以貼在這裡
+      placeholder: 拖曳圖片到此處或貼上連結
+    validations:
+      required: false
